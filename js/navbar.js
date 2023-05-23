@@ -5,7 +5,6 @@ class Navbar extends HTMLElement {
     }
 
     connectedCallback() {
-
         this.innerHTML = `
         <div class="sidebar">
             <i class="material-symbols-outlined">menu</i>
