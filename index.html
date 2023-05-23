@@ -3,11 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Meu site</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <script src="/js/navbar.js"></script> -->
+    <script src="js/navbar.js" type="text/javascript" defer></script>
+    <script src="js/header.js" type="text/javascript" defer></script>
+
 </head>
 
 <body>
+    <navbar-component></navbar-component>
+    <header-component></header-component>
+    <main>
 
+
+        <div w3-include-HTML="/components/navbar.html"></div>
+
+        <i class="material-icons">dark_mode</i>
+        <i class="material-icons"> sunny</i>
+        <i class="material-symbols-outlined">dark_mode</i>
+        <i class="material-symbols-outlined"> sunny</i>
+        <h1>Hi, I'm Larissa Hey</h1>
+        <span>Software Developer</span>
+    </main>
 </body>
 
 </html>
