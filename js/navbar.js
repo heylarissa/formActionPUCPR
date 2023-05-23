@@ -1,5 +1,6 @@
 // define o component navbar
 class Navbar extends HTMLElement {
+    
     constructor() {
         super();
     }
@@ -7,12 +8,14 @@ class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="sidebar">
-            <i class="material-symbols-outlined">menu</i>
-            <i class="material-symbols-outlined">home</i>
-            <i class="material-symbols-outlined">contact_page</i> 
-
+        
+            <a href="./index.html"><i class="material-symbols-outlined">home</i>Home</a>
+            <a href="./about.html">About</a>
+            <a href="./form.html"><i class="material-symbols-outlined">contact_page</i>Contact</a>
         </div>
     `;
     }
+
+    
 };
 customElements.define('navbar-component', Navbar);
