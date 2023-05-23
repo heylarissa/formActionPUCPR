@@ -1,0 +1,20 @@
+#header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.social-media {
+display: flex;
+width: 70px;
+font-size: 20px;
+justify-content: space-between;
+}
+#menubtn {
+    z-index: 2;
+}
