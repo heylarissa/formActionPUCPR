@@ -25,33 +25,8 @@
         <i class="material-symbols-outlined">sunny</i>
         <h1>Hi, I'm Larissa Hey</h1>
         <span>Software Developer</span>
-        <button id="menubtn" onclick="moveNav()"><i class="material-symbols-outlined">menu</i></button>
+        <button id="menubtn" onclick="nav.moveNav()"><i class="material-symbols-outlined">menu</i></button>
     </div>
 </body>
 
 </html>
-
-<script>
-
-    var open = false;
-
-    function moveNav() {
-        this.open = !this.open;
-        if (this.open){
-            openNav()
-        }
-        else {
-            closeNav()
-        }
-    }
-    function openNav() {
-        document.getElementById("sidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-    function closeNav() {
-        document.getElementById("sidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
-    }
-
-
-</script>
