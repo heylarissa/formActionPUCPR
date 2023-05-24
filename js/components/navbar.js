@@ -8,7 +8,7 @@ class Navbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="sidebar">
-            <a href="./index.html"><i class="material-symbols-outlined">home</i>Home</a>
+            <a href="./index.html"><i class="material-symbols-outlined iconsize">home</i>Home</a>
             <a href="./about.html"><i class="material-symbols-outlined">location_away</i>About</a>
             <a href="./form.html"><i class="material-symbols-outlined">contact_page</i>Contact</a>
         </div>
@@ -36,6 +36,7 @@ class Navbar extends HTMLElement {
             this.closeNav()
         }
     }
+    
     
 };
 customElements.define('navbar-component', Navbar);

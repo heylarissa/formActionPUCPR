@@ -13,7 +13,7 @@ class Header extends HTMLElement {
                 <i class="fa-brands fa-linkedin" style="color:black; font-size:25px"></i></a>
     
             <a href="https://github.com/heylarissa"><i class="fa-brands fa-github" style="color:black; font-size:25px"></i></a>
-        </div>
+            </div>
         </div>
         `;
     }
