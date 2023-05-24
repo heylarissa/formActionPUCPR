@@ -5,16 +5,18 @@ class Mode {
 
     moveElement (icon1, icon2) {
         icon1.style.position="absolute"
-        icon1.style.top = "-30px"
+        icon1.style.top = "-10px"
         icon1.style.fontSize = "15px"
+        icon1.classList.remove("pulse")
+
 
         icon2.style.position="relative"
         icon2.style.fontSize = "40px"
         icon2.style.top = "0px"
+        icon2.classList.add("pulse")
     }
     switchMode() {
         this.dark = !this.dark
-
         var sunnyIcon = document.getElementById("switch-mode-sun")
         var darkIcon = document.getElementById("switch-mode-moon")
 
