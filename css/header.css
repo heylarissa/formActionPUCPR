@@ -1,18 +1,19 @@
 #header {
-    background-color: white;
-    width: 100%;
     display: flex;
-    gap: 30px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 .social-media {
     display: flex;
     width: 70px;
     font-size: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 18px;
+    color: white;
 }
 
 #menubtn {

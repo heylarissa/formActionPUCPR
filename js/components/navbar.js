@@ -19,10 +19,13 @@ class Navbar extends HTMLElement {
         document.getElementById("sidebar").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
         document.getElementById("main").style.width = "calc(100% - 250px)";
+        document.getElementById("sidebar").style.height = "400px";
 
     }
     closeNav() {
         document.getElementById("sidebar").style.width = "0";
+        document.getElementById("sidebar").style.height = "0";
+
         document.getElementById("main").style.marginLeft = "0";
         document.getElementById("main").style.width = "100%";
 
@@ -36,7 +39,7 @@ class Navbar extends HTMLElement {
             this.closeNav()
         }
     }
-    
+
     
 };
 customElements.define('navbar-component', Navbar);
