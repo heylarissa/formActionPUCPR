@@ -8,8 +8,9 @@ class Mode {
         icon1.style.top = "-10px"
         icon1.style.fontSize = "15px"
         icon1.classList.remove("pulse")
+        icon1.style.opacity = "50%"
 
-
+        icon2.style.opacity = "80%"
         icon2.style.position="relative"
         icon2.style.fontSize = "40px"
         icon2.style.top = "0px"
