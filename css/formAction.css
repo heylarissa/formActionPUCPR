@@ -1,0 +1,9 @@
+.messagesent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 30px;
+    width: 30%;
+}

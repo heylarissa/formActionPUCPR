@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/formAction.css">
     <link rel="stylesheet" href="css/components/navbar.css">
     <link rel="stylesheet" href="css/components/header.css">
 
@@ -27,6 +27,15 @@
     <div class="form" id="main">
         <span id="success"></span>
         <span>Muito obrigada!</span>
+        <br>
+        <span>Confira abaixo as informações enviadas:</span>
+        <br>
+        <div class="messagesent">
+            <span id="email"></span>
+            <span id="subject-msg"></span>
+            <span id="content-msg"></span>
+        </div>
+
     </div>
 </body>
 
@@ -38,6 +47,13 @@
     var urlClass = new URL(urlAtual);
 
     var name = urlClass.searchParams.get("name");
+    var email = urlClass.searchParams.get("email");
+    var subject = urlClass.searchParams.get("subject");
+    var message = urlClass.searchParams.get("message");
+
     document.getElementById("success").innerHTML = name + ", sua mensagem foi enviada com sucesso!";
+    document.getElementById("email").innerHTML = "Seu email é " + email
+    document.getElementById("subject-msg").innerHTML = "Assunto: " + subject
+    document.getElementById("content-msg").innerHTML = message
 
 </script>
