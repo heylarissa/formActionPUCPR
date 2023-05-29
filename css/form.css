@@ -1,9 +1,87 @@
+:root {
+    --input-border: #8b8a8b;
+    --input-focus-h: 245;
+    --input-focus-s: 100%;
+    --input-focus-l: 42%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    transform: scale(1.05);
+}
+
+.form-control {
+    font-size: 16px;
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: none;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    color: white;
+
+}
+
+.form-control:not(textarea) {
+    line-height: 1;
+    height: 2.25rem;
+}
+
+textarea.input {
+    resize: vertical;
+}
+
+.form-control:focus {
+    border-color: hsl(var(--input-focus-h), var(--input-focus-s), var(--input-focus-l));
+    box-shadow: 0 0 0 3px hsla(var(--input-focus-h), var(--input-focus-s), calc(var(--input-focus-l) + 40%), 0.8);
+}
+
+.wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.message-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 input {
-    color: black
+    background: none;
 }
 
 textarea {
-    color: black
+    background: none;
 }
 
 .mail-wrapper {
