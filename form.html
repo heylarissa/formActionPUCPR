@@ -25,14 +25,67 @@
     <header-component id="header"></header-component>
 
     <div class="form" id="main">
-        <h3 id="corners">Contato</h3>
-        <form method="GET" action="formAction.html">
-            <input type=text name="Endereço" pattern="[0-9A-Za-záàâãéèêíóôõúç,\s]{5,50}" 
-                title="De 8 a 50 letras, números, espaço e vírgula">
-            <textarea name="message" class="form-control" id="message" cols="30" rows="7"
-                placeholder="Message"></textarea>
-            <input type="submit" value="Send Message" class="btn btn-primary">
-        </form>
+        <div class="wrapper">
+            <div class="row no-gutters">
+                <div class="contact-wrap">
+                    <h3 class="mb-4">Fale comigo</h3>
+                    <form method="GET" id="contactForm" name="contactForm" class="contactForm" action="formAction.html">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="name" id="name" required
+                                        placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email" required
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" required
+                                        placeholder="Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" id="message" cols="30" rows="6"
+                                        placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Send Message" class="btn btn-primary">
+                                    <div class="submitting"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="contact-wrapper">
+                        <h3>Contato</h3>
+
+                        <div class="phone-wrapper">
+                            <span class="fa fa-phone"></span>
+                            <div class="phone">
+                                <span>Telefone:</span>
+                                <a href="tel://5541997643987">+55 41 99764-3987</a>
+                            </div>
+                        </div>
+                        <div class="mail-wrapper">
+                            <span class="fa fa-paper-plane"></span>
+                            <div class="mail">
+                                <span>Email:</span>
+                                <a href="mailto:larissah.dandrade@gmail.com">larissah.dandrade@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

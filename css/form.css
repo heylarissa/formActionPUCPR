@@ -1,3 +1,23 @@
-.form {
-    margin: 30px;
+input {
+    color: black
+}
+
+textarea {
+    color: black
+}
+
+.mail-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.phone-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

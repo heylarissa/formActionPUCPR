@@ -25,9 +25,19 @@
     <header-component id="header"></header-component>
 
     <div class="form" id="main">
-    Sua mensagem foi enviada com sucesso!
-    <br>Muito obrigada!
+        <span id="success"></span>
+        <span>Muito obrigada!</span>
     </div>
 </body>
 
 </html>
+
+<script>
+    var urlAtual = window.location.href;
+
+    var urlClass = new URL(urlAtual);
+
+    var name = urlClass.searchParams.get("name");
+    document.getElementById("success").innerHTML = name + ", sua mensagem foi enviada com sucesso!";
+
+</script>
